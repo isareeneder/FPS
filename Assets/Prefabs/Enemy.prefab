@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 5207131268872078836}
   - component: {fileID: 1516582633099788737}
   - component: {fileID: 5616641096812409278}
+  - component: {fileID: 7839960547564006308}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -265,3 +266,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   target: {fileID: 0}
   chaseRange: 10
+--- !u!95 &7839960547564006308
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594533495739421449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb9d6583fed4df941a8f81d981406514, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
