@@ -5063,6 +5063,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1999209121 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2763228913670824074, guid: 903dc8ec93a2278418c512c4c0b25f16, type: 3}
+  m_PrefabInstance: {fileID: 1668091277232060517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2014442644
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,6 +5214,14 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 2083691846}
+    - target: {fileID: 2369284238904488487, guid: 903dc8ec93a2278418c512c4c0b25f16, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 100010, guid: 3534a960e64e98e43bc25b0971abf01a, type: 3}
+    - target: {fileID: 2369284238904488487, guid: 903dc8ec93a2278418c512c4c0b25f16, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 1999209121}
     - target: {fileID: 4314957429838926562, guid: 903dc8ec93a2278418c512c4c0b25f16, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.44
