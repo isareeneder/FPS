@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 4107411209698723501}
   - component: {fileID: 7097600753475904104}
   - component: {fileID: 4977690375290315580}
+  - component: {fileID: 6621587468992030896}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -158,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4760775064765583922}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.44, y: 0, z: 10.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -375,6 +376,19 @@ MonoBehaviour:
     ammoAmount: 10
   - ammoType: 2
     ammoAmount: 10
+--- !u!114 &6621587468992030896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760775064765583922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4428d17fafeb54c4eb1abf9227e04f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  hitPoints: 100
 --- !u!1 &7052114038475059149
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +634,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2409858793290475077, guid: 457104bcca4064e48bbd09b89d0b8653, type: 3}
   m_PrefabInstance: {fileID: 3106461184783834119}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &2763228913670824074 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 956078083958668429, guid: 457104bcca4064e48bbd09b89d0b8653, type: 3}
+  m_PrefabInstance: {fileID: 3106461184783834119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3661768343532413453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -715,3 +734,6 @@ MonoBehaviour:
   ammoType: 0
   ammo: {fileID: 4977690375290315580}
   damage: 30
+  muzzleFlash: {fileID: 2763228913670824074}
+  hitEffect: {fileID: 100010, guid: 3534a960e64e98e43bc25b0971abf01a, type: 3}
+  hitEffectLifetime: 0.1

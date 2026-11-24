@@ -16,24 +16,38 @@ public class EnemyHealth : MonoBehaviour
     {
         // Grab the collider on this same GameObject.
         enemyColl = GetComponent<Collider>();
+
     }
 
     // Lets other scripts ask whether the enemy is dead.
-    public bool IsDead()
-    {
-        return isDead;
-    }
+    public bool IsDead = false;
 
     public void TakeDamage(float damage)
     {
+        BroadcastMessage("OnDamageTaken");
+        
         hitPoints -= damage;
 
         if(hitPoints <= damage)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            //print("Enemy dead!");
+            Die();
         }
     }
 
+    private void Die()
+    {
+        if(isDead)
+        {
+            return;
+        }
 
-    // Students add Die() in Week 16.
+        isDead = true;
+
+        enemyColl.enabled = false;
+        
+        GetComponent<Animator>().SetTrigger("die");
+    }
+
 }
